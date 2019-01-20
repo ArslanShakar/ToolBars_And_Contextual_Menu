@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- overwrite the default buttons color -->
+        <item name="android:colorButtonNormal">@android:color/holo_blue_light</item>
+
+        <!--color toolbar subtitle , toolbar overflow three dots color, toolbar navigation(back) button color -->
+        <item name="android:textColorSecondary">@android:color/white</item>
+
+         <!--  overrite default ripple effect color that is grey by default -->
+        <item name="android:colorControlHighlight">@android:color/white</item>
+
+        <!-- checked radioButtons, rating bar, checked checkbox, edittext writing text color by default it is color accent now overwrite-->
+        <item name="android:colorControlActivated">@android:color/holo_orange_dark</item>
+
+        <!--  text color primary that is the tool bar title color , edit text-->
+        <item name="android:textColorPrimary">#fc04f5d9</item>
+
+        <!-- over write the default color of un checked radio buttons, checkboxed, rating bar, switch,etc  -->
+        <item name="colorControlNormal">@android:color/holo_green_light</item>
+
+        <!-- overwrite the default font and text color of views like buttons, textviews, toogle button-->
+        <item name="android:fontFamily">@font/kameron</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+
+        <!-- overwrite window default color  -->
+        <item name="android:windowBackground">@android:color/darker_gray</item>
+
+        <item name="actionBarDivider">@color/colorAccent</item>
+
+        <!--  when contextual menu open then for open contextual menu over on the toolbar so use this  -->
+        <item name="windowActionModeOverlay">true</item>
+
+        <!--set Action mode style-->
+        <item name="actionModeStyle">@style/MyModeStyle</item>
+
+
+        <!-- Change default icon of the action Mode-->
+        <item name="actionModeCloseDrawable">@drawable/ic_nav_2</item>
+
+    </style>
+
+    <style name="MyToolBarTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">#000</item>
+        <item name="android:textColorSecondary">@android:color/white</item> <!-- overflow menu three dots color -->
+    </style>
+
+    <style name="MyPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@android:color/holo_blue_light</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:dividerHeight">4dp</item>
+
+        <item name="colorControlNormal">@android:color/holo_green_light</item> <!-- un checked radio buttons, checkboxes color, -->
+        <item name="android:colorControlActivated">@android:color/holo_orange_dark</item> <!--  checked radio buttons, checkboxes color, -->
+    </style>
+
+    <!--define Action mode style-->
+    <style name="MyModeStyle" parent="@style/Widget.AppCompat.ActionMode">
+
+        <item name="background">@color/contextual_menu_background</item>
+        <item name="titleTextStyle">@style/ContextualMenuTitleTextStyle</item>
+
+    </style>
+
+    <style name="ContextualMenuTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#4d4c4c</item>
+
+    </style>
+
+</resources>
